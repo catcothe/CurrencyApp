@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Döviz Kuru Hesaplama</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header-wrapper">
+        <h4>DÖVİZ KURU HESAPLAMA</h4>
+      </div>
+      <div class="content-wrapper">
+        <input id="firstInput" class="amount" type="number" placeholder="Miktar" />
+        <select class="currencyOptions" id="firstCurrencyOption"></select>
+        <i class="fa-solid fa-arrow-right"></i>
+        <select class="currencyOptions" id="secondCurrencyOption"></select>
+        <script src="options.js"></script>
+        <input
+          class="amount"
+          id="secondInput"
+          type="text"
+          type="number"
+          placeholder="Sonuç"
+          readonly
+        />
+       
+      </div>
+       <button id="calculate">Hesapla</button>
+    </div>
+        <script src="currency.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
